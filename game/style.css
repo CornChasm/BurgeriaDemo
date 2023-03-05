@@ -1,0 +1,79 @@
+html {
+  background-color: #2a2a2a;
+  overflow-x: hidden;
+}
+.ingredientShelf {
+  background-image: url(../assets/shelf.png);
+  background-size: contain;
+  height: 938px;
+  width: 274px;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 20px;
+  left: 0px;
+  display: flexbox;
+  image-rendering: pixelated;
+}
+.ingredientShelf > div {
+  height: 112px;
+  outline: white 1px solid;
+}
+.ingredientShelf > div {
+  position: relative;
+  right: 9.5%;
+  transform: skewX(27deg);
+  border-bottom-right-radius: 9px;
+}
+.ingredientShelf > #topBun {
+  height: 154px;
+  right: 13%;
+}
+#placingIngredient {
+  width: 216px;
+  height: 192px;
+  outline: red 1px solid;
+  position: absolute;
+  left: 500px;
+  transform: translate(-50%);
+}
+#arrow {
+  width: 72px;
+  height: 85px;
+  background-repeat: no-repeat;
+  background-size: 72px 85px;
+  background-image: url(../assets/arrow.png);
+  image-rendering: pixelated;
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  transform: translate(-50%);
+}
+#floating {
+  width: 216px;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-size: 1728px 120px;
+  image-rendering: pixelated;
+}
+#tray {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  background-size: 512px 184px;
+  width: 512px;
+  height: 184px;
+  background-repeat: no-repeat;
+  background-image: url(../assets/tray.png);
+  outline: plum 1px solid;
+  image-rendering: pixelated;
+}
+#trayPlace {
+  position: absolute;
+  bottom: 64px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 512px;
+  height: 1px;
+  outline: lightblue 1px solid;
+}
