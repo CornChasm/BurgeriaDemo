@@ -14,14 +14,14 @@ const floating = document.getElementById("floating");
 const trayPlace = document.getElementById("trayPlace");
 const tray = document.getElementById("tray");
 
-var trayMid = tray.offsetLeft;
-var trayEdgeRight = trayMid + tray.offsetWidth / 2;
-var trayEdgeLeft = trayMid - tray.offsetWidth / 2;
-var trayPlaceTop = trayPlace.offsetTop + tray.offsetTop;
-var trayPlaceBottom = 64;
+let trayMid = tray.offsetLeft;
+let trayEdgeRight = trayMid + tray.offsetWidth / 2;
+let trayEdgeLeft = trayMid - tray.offsetWidth / 2;
+let trayPlaceTop = trayPlace.offsetTop + tray.offsetTop;
+let trayPlaceBottom = 64;
 
 onmousemove = function mouseX(event) {
-  var mousePos = event.clientX;
+  let mousePos = event.clientX;
   if (mousePos >= trayEdgeLeft && mousePos <= trayEdgeRight) {
     movingDiv.style.left = `${mousePos}px`;
   }
@@ -123,7 +123,7 @@ function ingredientFunctions() {
   }
   ingredientClick();
   onclick = function fall(event) {
-    var mousePos = event.clientX;
+    let mousePos = event.clientX;
     // trayPlaceBottom += 32;
     // trayPlace.style.bottom = `${trayPlaceBottom}px`;
     // trayPlaceTop = trayPlace.offsetTop + tray.offsetTop;
@@ -133,7 +133,7 @@ function ingredientFunctions() {
       mousePos <= trayEdgeRight &&
       didClickHappen == 1
     ) {
-      var placed = document.createElement("div");
+      let placed = document.createElement("div");
       function placedDiv() {
         placed.style.position = `absolute`;
         placed.style.width = `216px`;
